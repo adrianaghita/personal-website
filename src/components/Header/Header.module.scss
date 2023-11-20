@@ -1,0 +1,106 @@
+@import "../../index.scss";
+
+.header {
+  align-items: center;
+  background-color: $primary-background-color;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.terminal {
+  background-color: #151515;
+  border-radius: 5px;
+  box-shadow: rgb(15, 14, 14) 3px 4px 10px;
+  height: 400px;
+  width: 700px;
+}
+
+.terminal-bar {
+  align-items: center;
+  background-color: #323131;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  height: 30px;
+  width: 700px;
+}
+
+.terminal-button {
+  background-color: gray;
+  border-radius: 50%;
+  height: 10px;
+  margin-left: 7px;
+  width: 10px;
+
+  &.red {
+    background-color: #c51111;
+    border-color: #201e15;
+  }
+  &.yellow {
+    background-color: #ffc100;
+    border-color: #201e15;
+  }
+  &.green {
+    background-color: #00d742;
+    border-color: #201e15;
+  }
+}
+
+.terminal-content {
+  @include primary-font;
+  font-size: 18px;
+  margin: 30px 15px 30px 15px;
+
+  & .red {
+    color: #de4646;
+    opacity: 70%;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  & .yellow {
+    color: #ffc100;
+    opacity: 70%;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+
+  & .green {
+    color: #08a036;
+    opacity: 70%;
+
+    &:hover {
+      opacity: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .terminal {
+    width: 350px;
+  }
+
+  .terminal-bar {
+    width: 350px;
+  }
+
+  .terminal-content {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: $small-laptop) {
+  .terminal {
+    width: 600px;
+  }
+
+  .terminal-bar {
+    width: 600px;
+  }
+}

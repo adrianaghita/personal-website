@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sometype+Mono:wght@500&display=swap");
+
+body {
+  margin: 0;
+}
+
+@mixin primary-font {
+  font-family: "Sometype Mono", monospace;
+  font-weight: 500;
+}
+
+@mixin secondary-font {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+$primary-background-color: rgb(247, 244, 237);
+$accent-color: #f4d644;
+
+$small-laptop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
