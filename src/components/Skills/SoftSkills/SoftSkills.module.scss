@@ -1,0 +1,38 @@
+@import "../../../index.scss";
+
+.softSkills-section {
+  @include primary-font;
+
+  margin: 0 50px 0 50px;
+
+  & p {
+    margin: 30px 0 10px 0;
+
+    & span {
+      float: right;
+    }
+  }
+}
+
+.custom-bar {
+  width: 500px;
+  height: 10px;
+}
+
+@media screen and (max-width: $small-laptop) {
+  .custom-bar {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .custom-bar {
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .softSkills-section {
+    margin-top: 50px;
+  }
+}

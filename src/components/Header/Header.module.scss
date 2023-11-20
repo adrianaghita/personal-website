@@ -4,15 +4,16 @@
   align-items: center;
   background-color: $primary-background-color;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
+  border-bottom: 1px solid rgb(193, 192, 192);
 }
 
 .terminal {
   background-color: #151515;
   border-radius: 5px;
   box-shadow: rgb(15, 14, 14) 3px 4px 10px;
-  height: 400px;
+  height: fit-content;
   width: 700px;
 }
 
@@ -50,7 +51,7 @@
 
 .terminal-content {
   @include primary-font;
-  font-size: 18px;
+  font-size: 16px;
   margin: 30px 15px 30px 15px;
 
   & .red {
@@ -81,17 +82,22 @@
   }
 }
 
+.flyingIcon {
+  height: 30px;
+  width: 30px;
+}
+
 @media screen and (max-width: $mobile) {
   .terminal {
-    width: 350px;
+    max-width: 90vw;
   }
 
   .terminal-bar {
-    width: 350px;
+    max-width: 90vw;
   }
 
   .terminal-content {
-    font-size: 18px;
+    font-size: 13px;
   }
 }
 

@@ -1,6 +1,7 @@
 import ReactTyped from "react-typed";
 import styles from "./Header.module.scss";
 import NavBar from "../NavBar/NavBar";
+import { IoIosAirplane } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -30,21 +31,30 @@ const Header = () => {
             <p className={styles.green}>
               <ReactTyped
                 strings={[
-                  "My journey has led me to stepped onto the path of becoming a front-end developer and every line of code I write is fueled by a genuine passion for creating seamless and enjoyable user experiences.",
+                  "There is much to say about me, but the reason you're here is to explore my creative side and witness my programming skills, perhaps even a blend of both. I discovered my passion for front-end development not long ago, but since then, I've dedicated my whole heart to it, constantly striving to improve.",
                 ]}
-                typeSpeed={20}
-                startDelay={850}
+                typeSpeed={30}
+                startDelay={900}
                 showCursor={false}
               />
             </p>
             <p className={styles.red}>
               <ReactTyped
                 strings={[
-                  "$ join me on this journey, where curiosity meets code, and the possibilities are limitless_",
+                  "With this very brief insight into who I am, let's now shift our focus to the reason you're here: my technical presentation, my portfolio.",
                 ]}
                 typeSpeed={30}
-                startDelay={7500}
+                startDelay={14600}
+                showCursor={false}
               />
+            </p>
+            <p className={styles.yellow}>
+              <ReactTyped
+                strings={["$ buckle your seatbelt; we're about to begin! "]}
+                typeSpeed={40}
+                startDelay={21000}
+              />
+              <IoIosAirplane className={styles.flyingIcon} />
             </p>
           </div>
         </div>

@@ -1,0 +1,27 @@
+@import "../../../index.scss";
+
+.skills {
+  height: 100vh;
+  margin-top: 200px;
+}
+
+.title {
+  @include primary-font;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.skills-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: $mobile) {
+  .skills-details {
+    flex-direction: column;
+  }
+}
