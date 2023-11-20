@@ -4,6 +4,16 @@ body {
   margin: 0;
 }
 
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+  text-decoration: unset;
+}
+
 @mixin primary-font {
   font-family: "Sometype Mono", monospace;
   font-weight: 500;
@@ -15,6 +25,7 @@ body {
 }
 
 $primary-background-color: rgb(247, 244, 237);
+$primary-color: #151515;
 $accent-color: #f4d644;
 
 $small-laptop: 1024px;
