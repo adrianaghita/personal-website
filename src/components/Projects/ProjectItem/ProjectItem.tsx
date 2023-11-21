@@ -19,7 +19,7 @@ const ProjectItem = ({ title, description, image, url }: Project) => {
     >
       <Card className={styles.card}>
         <Card.Title className={styles.title}>{title}</Card.Title>
-        <Link to={`${url}`}>
+        <Link to={`${url}`} target="_blank">
           <Card.Img src={`${image}`} />
         </Link>
         <Card.Body>{description}</Card.Body>
