@@ -79,7 +79,6 @@ const TechnicalSkills = () => {
       {showAlternativeMessage ? (
         <div className={styles.action}>
           <p> But for the moment, let's focus on the present. </p>
-          <FaArrowDown className={styles.arrow} />
 
           <button onClick={resetPercentage}> Reset </button>
         </div>

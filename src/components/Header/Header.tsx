@@ -42,7 +42,7 @@ const Header = () => {
                   "With this very brief insight into who I am, let's now shift our focus to the reason you're here: my technical presentation, my portfolio.",
                 ]}
                 typeSpeed={30}
-                startDelay={14600}
+                startDelay={14900}
                 showCursor={false}
               />
             </p>
@@ -50,7 +50,7 @@ const Header = () => {
               <ReactTyped
                 strings={["$ buckle your seatbelt; we're about to begin! "]}
                 typeSpeed={40}
-                startDelay={21000}
+                startDelay={21300}
               />
               <IoIosAirplane className={styles.flyingIcon} />
             </p>
