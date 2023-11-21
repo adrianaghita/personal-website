@@ -8,7 +8,7 @@
 .navbar-list {
   display: flex;
   justify-content: flex-end;
-  margin: 20px 50px 10px 20px;
+  margin: 20px 50px 10px 50px;
 
   & li {
     transition: transform 0.5s ease-in-out;
@@ -17,18 +17,33 @@
   & li:hover {
     transform: scale(1.2);
   }
+}
 
-  & a {
-    @include primary-font;
-    color: $primary-color;
-    font-size: 20px;
-    padding: 20px;
-  }
+.icons {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .icon {
-  height: 25px;
+  color: $primary-color;
+  height: 35px;
+  padding: 3px;
   position: relative;
   top: 0px;
-  width: 25px;
+  width: 35px;
+}
+
+.active-link {
+  @include primary-font;
+  color: $accent-color;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.inactive-link {
+  @include primary-font;
+  color: $primary-color;
+  font-size: 20px;
+  padding: 20px;
 }

@@ -1,12 +1,10 @@
 import ReactTyped from "react-typed";
 import styles from "./Header.module.scss";
-import NavBar from "../NavBar/NavBar";
 import { IoIosAirplane } from "react-icons/io";
 
 const Header = () => {
   return (
     <>
-      <NavBar />
       <section className={styles.header}>
         <div className={styles.terminal}>
           <div className={styles[`terminal-bar`]}>
