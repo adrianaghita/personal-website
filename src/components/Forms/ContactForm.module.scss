@@ -15,7 +15,7 @@
 
 .form {
   padding: 0 32px 0 0;
-  max-width: 700px;
+  width: 700px;
 
   & input,
   textarea {
@@ -46,6 +46,17 @@ button {
   margin-top: 50px;
   padding: 10px 0 10px 0;
   width: 100%;
+}
+
+.disabled {
+  background-color: #bfc0c2;
+  color: black;
+  cursor: not-allowed;
+}
+
+.error-message {
+  font-family: $primary-font;
+  color: rgb(171, 4, 4);
 }
 
 @media screen and (min-width: $tablet) {
