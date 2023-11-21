@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sometype+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Sometype+Mono:wght@500&display=swap");
 
 $primary-background-color: rgba(237, 237, 237, 0.632);
 $primary-color: #151515;
 $accent-color: #f4d644;
+$border-color: rgb(193, 192, 192);
 
 $small-laptop: 1024px;
 $tablet: 768px;
@@ -28,6 +29,6 @@ a {
 }
 
 @mixin secondary-font {
-  font-family: "DM Serif Display", serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
