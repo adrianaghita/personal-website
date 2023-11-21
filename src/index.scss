@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Sometype+Mono:wght@500&display=swap");
 
-$primary-background-color: rgba(237, 237, 237, 0.632);
-$primary-color: #151515;
-$accent-color: #f4d644;
-$border-color: rgb(193, 192, 192);
-
-$small-laptop: 1024px;
-$tablet: 768px;
-$mobile: 425px;
-
 body {
   margin: 0;
 }
@@ -22,6 +13,18 @@ a {
   list-style-type: none;
   text-decoration: unset;
 }
+
+$primary-background-color: rgba(237, 237, 237, 0.632);
+$primary-color: #151515;
+$accent-color: #f4d644;
+$border-color: rgb(193, 192, 192);
+
+$primary-font: "Sometype Mono", monospace;
+$secondary-font: "Raleway", sans-serif;
+
+$small-laptop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
 
 @mixin primary-font {
   font-family: "Sometype Mono", monospace;
