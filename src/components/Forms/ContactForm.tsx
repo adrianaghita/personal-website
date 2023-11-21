@@ -19,8 +19,17 @@ const ContactForm = () => {
     messageHasError,
     formIsValid,
   } = useContactInput();
+
+  const handleSubmit = () => {
+    const email = "a.adrianaghita@gmail.com";
+    const mailtoLink = `mailto:${email}?body=${encodeURIComponent(
+      enteredMessage
+    )}`;
+
+    window.location.href = mailtoLink;
+  };
   return (
-    <div className={styles[`contact-form`]}>
+    <div className={styles[`contact-form`]} onSubmit={handleSubmit}>
       <img src={flowers} />
       <form className={styles.form}>
         <fieldset name="contact">
