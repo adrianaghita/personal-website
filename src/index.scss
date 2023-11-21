@@ -14,6 +14,10 @@ a {
   text-decoration: unset;
 }
 
+button:active {
+  transform: translateY(10px);
+}
+
 $primary-background-color: rgba(237, 237, 237, 0.632);
 $primary-color: #151515;
 $accent-color: #871256;
