@@ -31,6 +31,23 @@ button {
   border-radius: 5px;
 }
 
+.arrow {
+  position: relative;
+  animation: arrowAnimation 1s infinite;
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
 @media screen and (max-width: $small-laptop) {
   .custom-bar {
     width: 300px;

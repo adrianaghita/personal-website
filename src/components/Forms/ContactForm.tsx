@@ -2,6 +2,7 @@ import useContactInput from "../../hooks/useContactInput";
 import flowers from "../../assets/images/flowers-svgrepo-com.svg";
 
 import styles from "./ContactForm.module.scss";
+import { FormEvent } from "react";
 
 const ContactForm = () => {
   const {
@@ -20,7 +21,8 @@ const ContactForm = () => {
     formIsValid,
   } = useContactInput();
 
-  const handleSubmit = () => {
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
     const email = "a.adrianaghita@gmail.com";
     const mailtoLink = `mailto:${email}?body=${encodeURIComponent(
       enteredMessage

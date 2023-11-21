@@ -1,9 +1,9 @@
 @import "../../../index.scss";
 
 .skills {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $primary-background-color;
-  padding-top: 100px;
+  padding: 100px 120px 100px 120px;
 }
 
 .title {
@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width: $mobile) {
+  .skills {
+    padding: 100px 0 100px 0;
+  }
   .skills-details {
     flex-direction: column;
   }

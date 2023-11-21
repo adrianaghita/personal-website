@@ -1,4 +1,5 @@
 import { ProgressBar } from "react-bootstrap";
+import { FaArrowDown } from "react-icons/fa";
 
 import styles from "./TechnicalSkills.module.scss";
 import { useState } from "react";
@@ -77,13 +78,19 @@ const TechnicalSkills = () => {
 
       {showAlternativeMessage ? (
         <div className={styles.action}>
-          <p> Test </p>
+          <p> But for the moment, let's focus on the present. </p>
+          <FaArrowDown className={styles.arrow} />
 
           <button onClick={resetPercentage}> Reset </button>
         </div>
       ) : (
         <div className={styles.action}>
-          <p> Test</p>
+          <p>
+            People always ask in interviews "Where do you see yourself in 5
+            years?" Click on the button below to see my answer to their
+            question.
+          </p>
+          <FaArrowDown className={styles.arrow} />
 
           <button className={styles.button} onClick={increasePercentage}>
             Click here
