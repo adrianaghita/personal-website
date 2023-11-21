@@ -24,7 +24,7 @@ const ProjectsList = () => {
       description:
         "This is one of the first projects I undertook when I began exploring the world of web development, using only HTML and CSS. It marks a starting point for me in this journey. ",
       image: cloudHosting,
-      url: "a",
+      url: "https://adrianag-cloudhosting.netlify.app/",
     },
   ];
   return (
