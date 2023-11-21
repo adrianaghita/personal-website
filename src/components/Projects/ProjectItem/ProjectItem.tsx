@@ -4,8 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./ProjectItem.module.scss";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const ProjectItem = ({ title, description, image }: Project) => {
+const ProjectItem = ({ title, description, image, url }: Project) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -18,7 +19,9 @@ const ProjectItem = ({ title, description, image }: Project) => {
     >
       <Card className={styles.card}>
         <Card.Title className={styles.title}>{title}</Card.Title>
-        <Card.Img src={`${image}`} />
+        <Link to={`${url}`}>
+          <Card.Img src={`${image}`} />
+        </Link>
         <Card.Body>{description}</Card.Body>
       </Card>
     </div>
