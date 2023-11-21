@@ -1,5 +1,5 @@
-import phone from "../../assets/images/phone.png";
 import useContactInput from "../../hooks/useContactInput";
+import flowers from "../../assets/images/flowers-svgrepo-com.svg";
 
 import styles from "./ContactForm.module.scss";
 
@@ -21,7 +21,7 @@ const ContactForm = () => {
   } = useContactInput();
   return (
     <div className={styles[`contact-form`]}>
-      <img src={phone} />
+      <img src={flowers} />
       <form className={styles.form}>
         <fieldset name="contact">
           <legend id="contactDetailsLegend" className={styles[`form-legend`]}>
