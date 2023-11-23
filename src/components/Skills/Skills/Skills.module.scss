@@ -22,10 +22,8 @@
 }
 
 @media screen and (max-width: $mobile) {
-  .skills {
-    padding: 100px 0 100px 0;
-  }
   .skills-details {
     flex-direction: column;
+    align-items: center;
   }
 }

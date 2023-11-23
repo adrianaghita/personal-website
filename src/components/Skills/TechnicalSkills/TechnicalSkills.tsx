@@ -80,7 +80,10 @@ const TechnicalSkills = () => {
         <div className={styles.action}>
           <p> But for the moment, let's focus on the present. </p>
 
-          <button onClick={resetPercentage}> Reset </button>
+          <button onClick={resetPercentage} className={styles.button}>
+            {" "}
+            Reset{" "}
+          </button>
         </div>
       ) : (
         <div className={styles.action}>

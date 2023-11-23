@@ -8,12 +8,6 @@
   align-items: flex-start;
   min-height: 100vh;
   padding: 100px;
-
-  & img {
-    width: 400px;
-    padding-top: 150px;
-    animation: flowers 8s ease-in-out infinite;
-  }
 }
 
 .form {
@@ -30,6 +24,16 @@
     padding: 10px 12px;
     width: 500px;
   }
+}
+
+.image {
+  width: 400px;
+  padding-top: 150px;
+  animation: flowers 8s ease-in-out infinite;
+}
+
+.mobile-image {
+  display: none;
 }
 
 .form-legend {
@@ -81,10 +85,8 @@ button {
 }
 
 @media screen and (max-width: $tablet) {
-  .contact-form {
-    & img {
-      width: 280px;
-    }
+  .image {
+    width: 280px;
   }
 
   .form {
@@ -96,12 +98,26 @@ button {
 }
 @media screen and (max-width: $mobile) {
   .contact-form {
-    & img {
-      display: none;
-    }
+    padding: 0;
   }
 
-  .form-legend {
-    text-align: center;
+  .image {
+    display: none;
+  }
+
+  .mobile-image {
+    animation: flowers 5s linear infinite;
+    bottom: 5px;
+    display: inline;
+    height: 60px;
+    position: relative;
+    width: 50px;
+  }
+
+  .form {
+    & input,
+    textarea {
+      width: 200px;
+    }
   }
 }

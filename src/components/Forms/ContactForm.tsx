@@ -32,11 +32,11 @@ const ContactForm = () => {
   };
   return (
     <div className={styles[`contact-form`]} onSubmit={handleSubmit}>
-      <img src={flowers} />
+      <img src={flowers} className={styles.image} />
       <form className={styles.form}>
         <fieldset name="contact">
           <legend id="contactDetailsLegend" className={styles[`form-legend`]}>
-            Contact
+            Contact <img src={flowers} className={styles[`mobile-image`]} />
           </legend>
           <input
             type="text"
@@ -79,7 +79,7 @@ const ContactForm = () => {
           )}
           <button
             disabled={!formIsValid}
-            className={formIsValid ? "" : styles[`disabled`]}
+            className={formIsValid ? styles.button : styles[`disabled`]}
           >
             Send
           </button>
