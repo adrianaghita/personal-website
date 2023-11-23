@@ -47,3 +47,14 @@
   font-size: 20px;
   padding: 20px;
 }
+
+@media screen and (max-width: $mobile) {
+  .navbar-list {
+    display: none;
+  }
+
+  .icon {
+    top: 10px;
+    padding: 0;
+  }
+}
