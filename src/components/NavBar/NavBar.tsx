@@ -11,9 +11,6 @@ const NavBar = () => {
       <Navbar expand="lg" className="bg-body-tertiary d-md-none d-lg-none">
         <Container>
           <div>
-            <Navbar.Brand href="https://www.linkedin.com/in/adriana-ghita/">
-              <FaLinkedin className={styles.icon} />
-            </Navbar.Brand>
             <Navbar.Brand href="https://github.com/adrianaghita">
               <FaGithubSquare className={styles.icon} />
             </Navbar.Brand>
@@ -60,11 +57,6 @@ const NavBar = () => {
 
       <ul className={styles[`navbar-list`]}>
         <div className={styles.icons}>
-          <li>
-            <a href="https://www.linkedin.com/in/adriana-ghita/">
-              <FaLinkedin className={styles.icon} />
-            </a>
-          </li>
           <li>
             <a href="https://github.com/adrianaghita">
               <FaGithubSquare className={styles.icon} />
