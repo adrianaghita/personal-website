@@ -1,4 +1,3 @@
-import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
 import styles from "./NavBar.module.scss";
